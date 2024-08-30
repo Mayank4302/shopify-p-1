@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>hobbycue</title>
+</head>
+
+<body>
+    <div class="main relative">
+        <div class="popup absolute z-[20] h-screen bg-[#0000008d] hidden w-full  flex justify-center items-center">
+            <div class="popup-menu  w-[40%] rounded-md bg-white ">
+                <div class="pop-up flex items-center justify-end gap-48">
+                <h1 class="text-center text-3xl border-b-2 border-[#8064a2] font-medium mt-4 text-[#8064a2]">Sign up</h1>
+                <i class=" close-btn cursor-pointer ri-close-large-line mr-12 text-lg"></i>
+            </div>
+                <form action="backend.php " class="pt-12 ml-12  ">
+                    <label class="text-xl" for="name">Enter your name</label>
+                    <input class="border-2 mb-2 rounded-md text-lg px-6 py-1 w-72 " type="text" name="name" id=""  placeholder="Enter your name..">
+                    <br class="">
+                    <label class="text-xl" for="email">Enter your email</label>
+                    <input class="border-2 mb-2 rounded-md text-lg px-6 py-1 w-72 " type="email" name="email" id=""  placeholder="Enter your name..">
+                    <br>
+                    <label class="text-xl" for="pass">Enter your password</label>
+                    <input class=" border-2 rounded-md text-lg px-6 py-1 w-72 " type="password" name="pass" id=""  placeholder="Enter your name..">
+                    <br>
+                    <input class="mt-4 text-xl" type="checkbox" name="box">
+                    <label for="box text-xl">Remember me</label>
+                    <a href="#" class="ml-48 mt-4">forgot password?</a>
+                    <br>
+                    <button type="submit " class="px-3 py-2 text-lg border-2 font-normal hover:text-white border-[#8064a2] rounded-md ml-48 mb-8 hover:bg-[#8064a2]">Sign up</button>
+
+                </form>
+            </div>
+        </div>
+        <div class="navbar flex px-14 py-3 gap-12 items-center ">
+            <div class="left-nav flex gap-20">
+                <div class="logo-part flex items-center ">
+                    <div class="logo h-14 w-14 object-cover rounded-md py-3">
+                        <img class="rounded-md"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuyK9oaIYnSWqW3waOIj14bUudBZ_8KoWIlw&s"
+                            alt="">
+                    </div>
+                    <h3 class="text-4xl">hobbycue</h3>
+                </div>
+                <div class="search-part flex items-center">
+                    <input type="search" class=" rounded-md border-[#8064a2] bg-[#fafcffc7] px-12 py-2  mt-2" name=""
+                        id="" placeholder="Search here..">
+                    <i class="mt-2 ri-search-line bg-[#8064a2] h-9 w-9 flex items-center justify-center rounded-md"></i>
+                </div>
+            </div>
+            <div class="right-nav flex text-2xl font-medium pt-2 gap-14">
+                <h3><i class="ri-compass-3-fill "></i>Explore</h3>
+                <h3><i class="ri-shield-star-fill"></i>Hobbies <i class="ri-arrow-down-s-line"></i></h3>
+                <i class="ri-bookmark-fill"></i>
+                <i class="ri-notification-3-fill"></i>
+                <i class="ri-shopping-cart-2-fill"></i>
+
+            </div>
+            <button class="sign-btn px-7 py-2 font-medium rounded-md text-[#8064a2] border-2 border-[#8064a2] hover:bg-[#8064a2] hover:text-white">Sign up</button>
+        </div>
+        <div class="page1 bg-[#f7f5f9] px-10">
+            <div class="logincontent flex">
+                <div class="left-logincont gap-10 flex flex-col pt-28 w-1/2">
+                    <h2 class="font-medium text-5xl">Explore your <span class="text-blue-400">hobby</span> or <span
+                            class="text-[#8064a2]">passion</span> </h2>
+                    <p class=" text-lg leading-loose">Hobbies play a very important role in our lives. They occupy our
+                        minds when we are free and also make us happy. Hobbies are our escape from the real world that
+                        makes us forget our worries. Moreover, they make our lives interesting and enjoyable...</p>
+                    <p class=" text-lg leading-loose">Different people have different hobbies based on their taste and
+                        preferences. Some like swimming, some dancing and some prefer to read a book in isolation. One
+                        thing I like to do is to walk in the woods in silence and calm. I could say that it is a hobby
+                        of mine</p>
+                    <div class="images flex gap-8">
+                        <img class="h-40 w-48 object-cover"
+                            src="https://cdn.pixabay.com/photo/2012/02/28/15/40/singing-18382_960_720.jpg" alt="">
+                        <img class="h-40 w-48 object-cover"
+                            src="https://www.shutterstock.com/shutterstock/photos/2026856819/display_1500/stock-vector-people-training-in-gym-sportsmen-and-sportswomen-characters-run-on-treadmill-riding-bicycle-2026856819.jpg"
+                            alt="">
+                        <img class="h-40 w-48 object-cover"
+                            src="https://img.freepik.com/free-vector/artist-painting-without-right-hand_1284-17236.jpg?t=st=1724851132~exp=1724854732~hmac=2e6feefee383f8197e545847430f8ee29580c2a44cc0e8ba4f360a70baad88ee&w=740"
+                            alt="">
+                    </div>
+                </div>
+                <div class="right-logincont w-1/2 flex flex-col pl-20 pt-28 gap-9">
+                    <div class="upper flex gap-6 text-3xl font-medium">
+                        <h2 class="text-[#8064a2] border-b-2 border-[#8064a2]">Sign In</h2>
+                        <h2 class="opacity-50">Join In</h2>
+                    </div>
+                    <div class="medium text-2xl font-bold flex flex-col gap-4">
+                        <button
+                            class="up  w-[80%] px-5 py-1  border-2 border-[#8064a2] rounded-md flex items-center gap-14">
+                            <img class="h-10 w-10 object-cover" src="https://cdn2.hubspot.net/hubfs/53/image8-2.jpg"
+                                alt="">
+                            <h3 class="text-center">Continue with Google</h3>
+                        </button>
+                        <button
+                            class="down  w-[80%] px-5 py-1  border-2 border-[#8064a2] rounded-md flex items-center gap-14">
+                            <img class="h-10 w-10 object-cover"
+                                src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Facebook_Logo_2023.png" alt="">
+                            <h3 class="text-center">Continue with Facebook</h3>
+                        </button>
+                    </div>
+                    <div class="lower-med-sec flex items-center font-bold text-lg gap-4">
+                        <div class="line h-[3px] bg-black w-[27%] opacity-20"></div>
+                        <h4>Or connect with</h4>
+                        <div class="line h-[3px] bg-black w-[27%] opacity-20"></div>
+
+                    </div>
+                    <form action="backend.php">
+                    <div class="lowe-sec flex flex-col gap-4">
+                        <input type="email" class=" px-3 py-3 w-[80%] rounded-md" name="" id="" placeholder="Email">
+                        <input type="password"  class="px-3 py-3 w-[80%] rounded-md" placeholder="Password">
+                        <div class="password-grp flex justify-between ">
+                            <div class="check">
+                                <input type="checkbox" name="check" id="" class="h-4 w-4">
+                                <label for="check" class="text-lg">Remember me</label>
+                            </div>
+                            <div class="mr-36">
+                                <i class="ri-lock-2-fill"></i>
+                                <a href="#">forgot password?</a>
+                            </div>
+                        </div>
+                        <button type="submit"
+                            class="down text-center hover:bg-[#8064a2] hover:text-white w-[80%] px-5 py-3  border-2 border-[#8064a2] font-bold text-xl rounded-md ">
+                            Continue
+                        </button>
+                    </div>
+                </form>
+                </div>
+            </div>
+        </div>
+        <div class="page2  pt-12 pb-24">
+            <div class="page2-content flex   pt-20 ">
+                <div class="left ml-24  flex flex-col gap-5 w-1/2">
+                    <div class="upper  h-60  w-[90%] border-2 rounded-md  ">
+                        <h1 class="capitalize text-2xl font-medium py-6 px-6 "> <i class="ri-team-fill"></i> People</h1>
+                        <p class="px-5">A teacher is a beautiful gift given by god because god is a creator of the whole
+                            world and a teacher is a creator of a whole nation. A teacher is such an important creature
+                            in the life of a.</p>
+                        <button
+                            class="px-6 ml-3 mt-4 py-2 font-medium rounded-md ml-8 text-[#8064a2] border-2 border-[#8064a2] hover:bg-[#8064a2] hover:text-white">Connect</button>
+                    </div>
+                    <div class="lower  h-60  w-[90%] border-2 rounded-md">
+                        <h1 class="capitalize text-2xl font-medium py-6 px-6 "> <i
+                                class="ri-shopping-bag-2-fill"></i>Products</h1>
+                        <p class="px-5">Good examples are cooking, drawing, painting, singing or writing to relax and
+                            stay creative. Many hobbies fit into several types,.</p>
+                        <button
+                            class="px-6 ml-3 mt-4 py-2 font-medium rounded-md ml-8 hover:bg-[#8064a2] hover:text-white text-[#8064a2] border-2 border-[#8064a2]">Get
+                            it</button>
+                    </div>
+                </div>
+                <div class="right flex  flex-col gap-5 w-1/2">
+                    <div class="upper  h-60  w-[90%] border-2 rounded-md  ">
+                        <h1 class="capitalize text-2xl font-medium py-6 px-6 "> <i class="ri-team-fill"></i> Place</h1>
+                        <p class="px-5">A teacher is a beautiful gift given by god because god is a creator of the whole
+                            world and a teacher is a creator of a whole nation. A teacher is such an important creature
+                            in the life of a.</p>
+                        <button
+                            class="px-6 ml-3 mt-4 py-2 font-medium rounded-md hover:bg-[#8064a2] hover:text-white ml-8 text-[#8064a2] border-2 border-[#8064a2]">Meet
+                            up</button>
+                    </div>
+                    <div class="lower  h-60  w-[90%] border-2 rounded-md">
+                        <h1 class="capitalize text-2xl font-medium py-6 px-6 "> <i class="ri-shopping-bag-2-fill"></i>
+                            Program</h1>
+                        <p class="px-5">Good examples are cooking, drawing, painting, singing or writing to relax and
+                            stay creative. Many hobbies fit into several types,.</p>
+                        <button
+                            class="px-6 ml-3 mt-4 py-2 font-medium ml-8 hover:bg-[#8064a2] hover:text-white  rounded-md text-[#8064a2] border-2 border-[#8064a2]">Attend</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container bg-[#f7fdff] p-24 mt-20">
+                <div class="content bg-white border-2">
+                    <h1 class="text-2xl  mt-8 font-medium ml-12"><i class="h-9 w-9  ri-add-circle-fill"></i> Add your own</h1>
+                    <p class="px-12 mt-6 text-xl w-[90%] mb-8">
+                        Are you a teacher or expert?  Do you sell or rent out equipment, venue or event tickets?  Or, you know someone who should be on hobbycue?  Go ahead and Add your Own page</p>
+                     <button class="px-6 ml-3 mt-3 py-2 font-medium rounded-md ml-8 hover:bg-[#8064a2] hover:text-white text-[#8064a2] border-2 border-[#8064a2] mb-8">Add new
+                        it</button>
+                </div>
+            </div>
+        </div>
+        <div class="last-section">
+            <div class="context mx-20 bg-[#d6d4ed] p-10 rounded-md ">
+                <h1 class="text-2xl font-medium"><i class="ri-terminal-window-fill"></i> Testimonials</h1>
+                <p class=" tracking-wide mt-8 leading-loose w-[90%] text-lg opacity-80">In a fast growing and ever changing city like Bangalore, it sometimes becomes very difficult to find or connect with like minded people. Websites like hobbycue.com is a great service which helps me get in touch with, communicate, connect, and exchange ideas with other dancers. It also provides the extra benefit of finding products and services that I can avail, which I can be assured is going to be of great quality as it comes recommended by people of the hobbycue community. To have discussions, to get visibility, and to be able to safely explore various hobbies and activities in my city, all under one roof, is an excellent idea and I highly recommend it.</p>
+            </div>
+        </div>
+        <div class="lower-page-footer mt-12 pt-28 px-20 bg-blue-50">
+           <h1 class="text-5xl tracking-wide font-medium">Your <span class="text-[#8064a2]"> Hobby,</span> Your <span class="text-blue-500">Community...</span></h1>
+           <button class="font-medium mt-14 tracking-wide bg-[#8064a2] hover:bg-white hover:border-[#8064a2] hover:text-black text-white text-xl mt-8 px-3 rounded-md py-2">Get started</button>
+           <div class="img flex gap-12 mt-24">
+            <img class="bg-transparent h-80 w-80 object-cover" src="https://www.pinclipart.com/picdir/big/522-5222793_painter-painting-clipart-illustration-png-download.png" alt="">
+            <img class="bg-transparent h-80 w-80 object-cover" src="https://cdni.iconscout.com/illustration/premium/thumb/female-listening-music-11821987-9636535.png?f=webp" alt="">
+            <img class="bg-transparent h-80 w-80 object-cover" src="https://st4.depositphotos.com/1832477/40432/v/450/depositphotos_404323668-stock-illustration-cardio-training-on-treadmill-man.jpg" alt="">
+            <img class=" h-80 w-80 object-cover" src="https://png.pngtree.com/png-vector/20240315/ourmid/pngtree-colorful-of-children-read-a-book-png-image_11970121.png" alt="">
+           </div>
+        </div>
+        <footer class="flex pt-20 gap-60 bg-slate-200  px-10 pb-3 text-lg">
+            <div class="row1 flex flex-col gap-4  ">
+                <h1 class="text-3xl font-medium cursor-pointer">Hobbycue</h1>
+                <h4 class=" cursor-pointer mt-6"><a href=""> About us</a></h4>
+                <h4 class="cursor-pointer">Our services</h4>
+                <h4 class="cursor-pointer">FAQ</h4>
+                <h4 class="cursor-pointer">Contact us</h4>
+            </div>
+            <div class="row2 flex flex-col gap-4 text-lg">
+                <h1 class="text-3xl font-medium cursor-pointer">How Do I</h1>
+                <h4 class="mt-6 cursor-pointer">Add a listing</h4>
+                <h4 class="cursor-pointer">Claim listing</h4>
+                <h4 class="cursor-pointer">Add a blog post</h4>
+                <h4 class="cursor-pointer">Post a Query</h4>
+            </div>
+            <div class="row3 flex flex-col gap-4 text-lg">
+                <h1 class="text-3xl font-medium cursor-pointer">Quick links</h1>
+                <h4 class="mt-6 cursor-pointer">listing</h4>
+                <h4 class="cursor-pointer">blog Post</h4>
+                <h4 class="cursor-pointer">Shop/Store</h4>
+            </div>
+            <div class="frend w-[20%]">
+                <form action="backend.php">
+                    <label for="mail" class="text-2xl font-medium">Invite friends</label>
+                    <input class="rounded-md px-5 py-2" type="email" name="" id="" placeholder="Email Id">
+                    
+                </form>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script src="script.js"></script>
+</html>
